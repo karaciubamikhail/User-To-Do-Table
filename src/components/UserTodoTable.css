@@ -119,7 +119,7 @@ body {
       margin-top: 0;
     }
   }
-  @media (max-width: 403px){
+  @media (max-width: 525px){
     body{
       margin: 0;
     }
@@ -154,12 +154,14 @@ body {
     }
     .count {
       width: 86px;
+      font-size: 12px!important;
     }
     .table thead tr th:nth-child(2){
       width: 199px;
     }
     .index{
       width: 37px;
+      font-size: 12px!important;
     }
   }
   @media(max-width:334px){
