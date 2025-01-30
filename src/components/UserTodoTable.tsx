@@ -32,7 +32,7 @@ const App: React.FC = () => {
               <tr>
                 <th className="index">#</th>
                 <th>Username</th>
-                <th>To-Do Count</th>
+                <th className="count">To-Do Count</th>
               </tr>
             </thead>
             <tbody>
@@ -48,7 +48,7 @@ const App: React.FC = () => {
                       </div>
                     </div>
                   </td>
-                  <td>{todos.filter((todo) => todo.userId === user.id).length}</td>
+                  <td className="count">{todos.filter((todo) => todo.userId === user.id).length}</td>
                 </tr>
               ))}
             </tbody>
