@@ -51,7 +51,7 @@ body {
     padding: 12px;
     text-align: left;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 16px;
   }
   
   .table th {
@@ -87,12 +87,14 @@ body {
   }
   
   .userName {
+    margin-bottom: 2px;
     font-size: 16px;
     font-weight: bold;
     font-weight: 500;
   }
   
   .userEmail {
+    margin-top: 2px;
     font-size: 12px;
     color: #9ca3af;
     font-weight: 500;
@@ -112,20 +114,56 @@ body {
   .count{
     width: 168px;
   }
-  @media(max-width: 402px){
+  @media ((min-width:403px) and (max-width: 834px)){
     .header{
-        font-size: 24px;
+      margin-top: 0;
+    }
+  }
+  @media (max-width: 403px){
+    body{
+      margin: 0;
+    }
+    .wrapper {
+      padding: 40px;
+      padding-top: 56px;
+      max-width: 322px;
+    }
+    .header{
+      font-size: 24px;
     }
     .subheader{
-        font-size: 12px;
+      font-size: 12px;
+      margin-bottom: 24px;
     }
     .table th {
-        font-size: 8px;
+      font-size: 8px;
+    }
+    .table th, .table td {
+      padding: 6px;
+      font-size: 8px;
+    }
+    .avatar{
+      width: 28px;
+      height: 28px;
     }
     .userName {
-        font-size: 12px;
+      font-size: 12px;
     }
     .userEmail{
-        font-size: 10px;
+      font-size: 10px;
     }
+    .count {
+      width: 86px;
+    }
+    .table thead tr th:nth-child(2){
+      width: 199px;
+    }
+    .index{
+      width: 37px;
+    }
+  }
+  @media(max-width:334px){
+    .tableWrapper {
+      overflow: scroll;
+  }
   }
